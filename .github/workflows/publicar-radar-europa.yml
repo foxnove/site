@@ -1,10 +1,6 @@
-name: Publicar Radar Europa 2027 no GitHub Pages
+# Legacy private Pages deployment is superseded by foxnove/youtube Pages.
+name: Radar Europa 2027 - publicação privada desativada
 on:
-  push:
-    branches: [radar-europa-2027]
-    paths:
-      - 'radar-europa-2027/docs/**'
-      - '.github/workflows/publicar-radar-europa.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -15,6 +11,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
