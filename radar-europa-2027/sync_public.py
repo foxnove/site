@@ -12,9 +12,9 @@ def main():
     def git(*args):
         return subprocess.check_output(['git','-C',str(checkout),*args],text=True).strip()
     remote = git('remote','get-url','origin')
-    if remote not in ('git@github.com:foxnove/youtube.git','https://github.com/foxnove/youtube.git'):
+    if remote not in ('git@github.com:foxnove/site.git','https://github.com/foxnove/site.git'):
         raise ValueError('Unexpected public repository')
-    if git('branch','--show-current') != 'radar-europa-2027':
+    if git('branch','--show-current') != 'master':
         raise ValueError('Unexpected public branch')
     data = read_json(ROOT/'docs/data.json',{})
     if data.get('environment') != 'production':
@@ -25,7 +25,7 @@ def main():
     git('add','--','radar-europa-2027/data.json')
     if subprocess.run(['git','-C',str(checkout),'diff','--cached','--quiet']).returncode:
         git('commit','-m','radar: atualizar estado e tarifas verificadas')
-        git('push','origin','HEAD:radar-europa-2027')
+        git('push','origin','HEAD:master')
     print('Allowlisted public data synchronized.')
     return 0
 
