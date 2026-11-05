@@ -1,0 +1,27 @@
+{
+  "origin": "SSA",
+  "destinations": [
+    "LIS",
+    "MAD",
+    "CDG",
+    "ORY",
+    "FCO",
+    "MXP",
+    "BCN",
+    "OPO",
+    "ZAG",
+    "TIA",
+    "TBS"
+  ],
+  "windows": [
+    [
+      "2027-02-20",
+      "2027-03-31"
+    ],
+    [
+      "2027-07-01",
+      "2027-08-31"
+    ]
+  ],
+  "max_brl": 4500
+}
