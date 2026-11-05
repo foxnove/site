@@ -1,1 +1,29 @@
-{"updated_at":null,"offers":[]}
+{
+  "status": "credentials_missing",
+  "environment": "production",
+  "updated_at": null,
+  "last_attempt_at": "2026-11-05T04:25:55.989317+00:00",
+  "last_success_at": null,
+  "requests": 0,
+  "successful_queries": 0,
+  "queries_total": 0,
+  "errors": [
+    {
+      "code": "credentials_missing"
+    }
+  ],
+  "quota": {
+    "month": "2026-11",
+    "used": 0,
+    "limit": 400
+  },
+  "scheduler": {
+    "status": "requires_default_branch_workflow",
+    "interval_hours": 6
+  },
+  "email_status": "not_configured",
+  "max_brl": 4500,
+  "schema_version": 2,
+  "offers": [],
+  "history": []
+}

@@ -1,26 +1,66 @@
 name: Radar Europa 2027
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [radar-europa-2027]
+    paths:
+      - 'radar-europa-2027/*.py'
+      - 'radar-europa-2027/config.json'
+      - '.github/workflows/radar-europa-2027.yml'
 permissions:
   contents: write
+concurrency:
+  group: radar-europa-2027-monitor
+  cancel-in-progress: false
 jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: radar-europa-2027
+          path: backend
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests
-      - run: python radar-europa-2027/amadeus_scan.py
+      - run: pip install 'requests>=2.32.3,<3'
+      - name: Test monitor
+        run: python -m unittest discover -s backend/radar-europa-2027 -p 'test_*.py'
+      - name: Query production fares
+        id: scan
+        continue-on-error: true
+        run: python backend/radar-europa-2027/amadeus_scan.py
         env:
           AMADEUS_CLIENT_ID: ${{ secrets.AMADEUS_CLIENT_ID }}
           AMADEUS_CLIENT_SECRET: ${{ secrets.AMADEUS_CLIENT_SECRET }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
-      - run: |
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+          AMADEUS_ENV: production
+      - name: Persist private state and public snapshot
+        if: always()
+        working-directory: backend
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add radar-europa-2027/docs/data.json
+          if [ -d radar-europa-2027/private ]; then git add radar-europa-2027/private; fi
           git diff --cached --quiet || (git commit -m "Atualizar preços Radar Europa" && git push)
+      - name: Checkout public Radar branch with repository-specific deploy key
+        uses: actions/checkout@v4
+        with:
+          repository: foxnove/youtube
+          ref: radar-europa-2027
+          path: public
+          ssh-key: ${{ secrets.PUBLIC_DATA_SSH_KEY }}
+          sparse-checkout: radar-europa-2027
+      - name: Synchronize allowlisted public data
+        run: python backend/radar-europa-2027/sync_public.py --checkout public
+      - name: Report unavailable API
+        if: steps.scan.outcome == 'failure'
+        run: |
+          echo 'No successful production scan. See public status; credentials or API access may be missing.'
+          exit 1

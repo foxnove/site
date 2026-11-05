@@ -9,6 +9,8 @@
     "MXP",
     "BCN",
     "OPO",
+    "FRA",
+    "AMS",
     "ZAG",
     "TIA",
     "TBS"
@@ -23,5 +25,12 @@
       "2027-08-31"
     ]
   ],
-  "max_brl": 4500
+  "max_brl": 4500,
+  "extra_destinations": ["BRU", "DUB", "LHR", "VIE"],
+  "durations": [14, 18, 21, 24],
+  "date_step_days": 1,
+  "drop_percent": 10,
+  "max_queries_per_run": 2,
+  "monthly_request_budget": 400,
+  "offer_ttl_hours": 24
 }
