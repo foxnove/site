@@ -30,7 +30,9 @@
   "durations": [14, 18, 21, 24],
   "date_step_days": 1,
   "drop_percent": 10,
-  "max_queries_per_run": 2,
-  "monthly_request_budget": 400,
+  "prioritized_destinations": ["LIS", "MAD", "CDG", "FCO", "MXP"],
+  "max_queries_per_run": 1,
+  "daily_request_budget": 6,
+  "monthly_request_budget": 180,
   "offer_ttl_hours": 24
 }

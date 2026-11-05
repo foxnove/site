@@ -1,14 +1,7 @@
 name: Radar Europa 2027
 on:
+  workflow_call:
   workflow_dispatch:
-  schedule:
-    - cron: '17 */6 * * *'
-  push:
-    branches: [radar-europa-2027]
-    paths:
-      - 'radar-europa-2027/*.py'
-      - 'radar-europa-2027/config.json'
-      - '.github/workflows/radar-europa-2027.yml'
 permissions:
   contents: write
 concurrency:
@@ -32,14 +25,13 @@ jobs:
       - name: Query production fares
         id: scan
         continue-on-error: true
-        run: python backend/radar-europa-2027/amadeus_scan.py
+        run: python backend/radar-europa-2027/serpapi_scan.py
         env:
-          AMADEUS_CLIENT_ID: ${{ secrets.AMADEUS_CLIENT_ID }}
-          AMADEUS_CLIENT_SECRET: ${{ secrets.AMADEUS_CLIENT_SECRET }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
           ALERT_TO: ${{ secrets.ALERT_TO }}
-          AMADEUS_ENV: production
+          RADAR_SCHEDULE_ENABLED: 'true'
       - name: Persist private state and public snapshot
         if: always()
         working-directory: backend

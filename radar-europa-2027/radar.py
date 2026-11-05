@@ -12,7 +12,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 BRAZIL = set('SSA GRU CGH VCP GIG SDU BSB CNF PLU REC FOR NAT JPA MCZ AJU BPS IOS VIX CWB POA FLN BEL MAO SLZ THE CGB CGR GYN PMW PVH RBR MCP BVB FEN JDO PNZ NVT IGU JOI XAP UDI UBA RAO SJP LDB MGF'.split())
-OFFER_FIELDS = 'id destination departure return price currency airlines airline_names stops connections durations baggage direct domestic_connection international_connection checked_at change_percent historical_low promotion period'.split()
+OFFER_FIELDS = 'id destination departure return price currency airlines airline_names stops connections durations baggage direct domestic_connection international_connection checked_at change_percent historical_low promotion period outbound_direct outbound_domestic_connection return_details_available source_url'.split()
 
 def read_json(path, default):
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else default
@@ -124,7 +124,7 @@ def mark_sent(alerts,state,now):
         state.setdefault('alerts',{})[item['id']] = {'price':item['price'],'at':now}
 
 def public_snapshot(run,history):
-    fields = 'status environment updated_at last_attempt_at last_success_at requests successful_queries queries_total errors quota scheduler email_status coverage max_brl'.split()
+    fields = 'provider status environment updated_at last_attempt_at last_success_at requests successful_queries queries_total errors quota scheduler email_status coverage max_brl'.split()
     result = {k:run[k] for k in fields if k in run}
     result['schema_version'] = 2
     result['offers'] = [{k:o[k] for k in OFFER_FIELDS if k in o} for o in run.get('offers',[])] if run.get('status')!='test' else []
@@ -208,8 +208,8 @@ def send_alerts(alerts,state,now):
     msg['From'],msg['To'] = os.environ['SMTP_USER'],os.environ['ALERT_TO']
     lines = []
     for x in alerts:
-        lines.append(f"SSA → {x['destination']} | R$ {x['price']:.2f} por pessoa, ida e volta\n{x['departure']} → {x['return']} | {', '.join(x.get('airline_names',[]))}\nEscalas ida/volta: {x.get('stops')} | Conexões: {x.get('connections')}\nVariação: {x.get('change_percent')}% | Mínimo histórico: R$ {x['historical_low']:.2f}\n")
-    msg.set_content('\n'.join(lines)+'\nTarifas sujeitas a alteração e reconfirmação. A API não fornece link de compra.\nhttps://foxnove.github.io/youtube/radar-europa-2027/')
+        lines.append(f"SSA → {x['destination']} | R$ {x['price']:.2f} por pessoa, ida e volta\n{x['departure']} → {x['return']} | {', '.join(x.get('airline_names',[]))}\nEscalas ida/volta: {x.get('stops')} | Conexões: {x.get('connections')}\nVolta: {'a confirmar (não consultada para economizar créditos)' if x.get('return_details_available') is False else 'conforme itinerário'}\nVariação: {x.get('change_percent')}% | Mínimo histórico: R$ {x['historical_low']:.2f}\n{x.get('source_url','')}\n")
+    msg.set_content('\n'.join(lines)+'\nTarifas sujeitas a alteração e reconfirmação. O link Google Flights é para consulta, não garantia de compra.\nhttps://foxnove.github.io/youtube/radar-europa-2027/')
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com',465,timeout=30) as smtp:
             smtp.login(os.environ['SMTP_USER'],os.environ['SMTP_APP_PASSWORD'])
