@@ -124,12 +124,20 @@ def main(root=ROOT):
             scan_cfg={**cfg,'destinations':list(dict.fromkeys(prioritized+cfg['destinations']))}
             jobs=[job for job in search_jobs(scan_cfg) if job[1]>now[:10]]
             if not jobs:raise ApiError('no_future_dates')
-            batch=plan_batch(jobs,state,2)
-            watched=bool(state.get('watchlist')) and state.get('queries_total',0)%3==2
-            if watched:
-                job,is_watch=batch[0]
-            else:
-                job=next_batch(jobs,state.get('cursor',0),1)[0][0];is_watch=False
+            # Balance both travel seasons. One paid query per execution keeps
+            # the free monthly budget intact; consecutive runs alternate seasons.
+            periods={'fev-mar':[], 'jul-ago':[]}
+            for candidate in jobs:
+                season='fev-mar' if candidate[1][5:7] in ('02','03') else 'jul-ago'
+                periods[season].append(candidate)
+            if not all(periods.values()):
+                raise ApiError('missing_travel_window')
+            target='fev-mar' if state.get('queries_total',0)%2==0 else 'jul-ago'
+            season_jobs=periods[target]
+            season_cursors=state.setdefault('season_cursors',{})
+            season_index=int(season_cursors.get(target,0))%len(season_jobs)
+            job=season_jobs[season_index]
+            is_watch=False
             if usage.get('month')!=now[:7]:
                 usage['month'],usage['requests']=now[:7],0
             day=current.astimezone(dt.timezone(dt.timedelta(hours=-3))).date().isoformat()
@@ -148,8 +156,7 @@ def main(root=ROOT):
                     except (ValueError,KeyError,TypeError,IndexError,AttributeError):run['errors'].append({'code':'invalid_offer'})
             found=list({x['id']:x for x in found}.values())
             enriched,alerts=analyze(found,state,cfg,now)
-            if is_watch:state['watch_cursor']=state.get('watch_cursor',0)+1
-            else:state['cursor']=(jobs.index(job)+1)%len(jobs)
+            season_cursors[target]=(season_index+1)%len(season_jobs)
             watchlist=state.setdefault('watchlist',{})
             for item in found:
                 key=item['destination']+'|'+item['period']
@@ -161,7 +168,7 @@ def main(root=ROOT):
             run['status']='partial' if run['errors'] else 'ok'
             run['updated_at']=run['last_success_at']=now
             run['successful_queries']=1
-            run['coverage']={'mode':'rotating_sample_and_watchlist','combinations':len(jobs),'queries_this_run':1,'durations':cfg.get('durations',[]),'return_details':'not_requested_to_save_credits'}
+            run['coverage']={'mode':'alternating_travel_seasons','combinations':len(jobs),'queries_this_run':1,'durations':cfg.get('durations',[]),'return_details':'not_requested_to_save_credits'}
             state['queries_total']=state.get('queries_total',0)+1
             run['email_status']=send_alerts(alerts,state,now)
         except ApiError as error:
