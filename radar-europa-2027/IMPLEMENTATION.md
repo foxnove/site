@@ -1,19 +1,17 @@
-# Radar Europa 2027 — plano e registro
+﻿# Radar Europa 2027 — plano e registro
 
-Especificação: missão fornecida pelo usuário em 05/11/2026. Execução autônoma autorizada, inclusive publicação, exclusivamente na branch radar-europa-2027.
+Especificação: missão fornecida pelo usuário em 05/11/2026. Execução autônoma autorizada, inclusive publicação, exclusivamente nas branches e diretórios do Radar.
 
-Arquitetura: Python/requests no repositório privado; snapshot público com lista explícita de campos; GitHub Pages existente sem mudança de fonte. Segredos somente em Actions Secrets. API de produção por padrão; teste nunca publicado como tarifa real.
+Arquitetura: Python/requests no repositório privado; snapshot público com lista explícita de campos; GitHub Pages existente sem mudança de fonte. Segredos somente em Actions Secrets. Produção por padrão; teste não aparece como tarifa real.
 
-1. Testar normalização de voos, distinção direto/conexão doméstica, histórico, alertas sem repetição, cotas e falhas sem perda do último resultado.
-2. Implementar scanner importável, varredura rotativa de datas/durações com limite mensal conservador configurável, OAuth, tentativas limitadas, estado privado e exportação pública.
-3. Implementar workflow em push/manual/schedule e sincronização com token de acesso restrito ao repositório público. Persistir estado antes de sincronizar. Sem mudanças em master: schedule permanecerá bloqueado pela exigência da plataforma.
-4. Reformular painel com filtros, comparação de períodos, histórico SVG acessível, estados verdadeiros e layout responsivo.
-5. Executar testes, publicar branches autorizadas, verificar execução e Pages. Credenciais ausentes serão documentadas como bloqueio, nunca substituídas por dados simulados.
+1. Testar normalização, conexões domésticas, histórico, deduplicação, cotas e persistência de falhas.
+2. Implementar scanner importável, datas/durações flexíveis, varredura rotativa, watchlist recorrente, OAuth, limite mensal e tentativas limitadas.
+3. Implementar workflow e sincronização com chave exclusiva do repositório público; persistir estado antes de publicar. Preservar master: cron fica pendente por exigência do GitHub.
+4. Reformular painel com filtros, comparação, histórico SVG, estados reais e layout responsivo.
+5. Executar testes, publicar branches autorizadas e verificar execução/Pages. Documentar credenciais ausentes sem inventar resultados.
 
-Diagnóstico: nenhum Actions Secret em site ou youtube; Pages de youtube ativo na branch radar-europa-2027; site sem Pages; scanner não reconhecido entre workflows, sem schedule; nenhuma sincronização; destinatário embutido apenas no backend privado (remover do código atual). Não houve consulta real.
+Diagnóstico: inicialmente nenhum Actions Secret; Pages de youtube ativo na branch do Radar; site sem Pages; scanner sem cron, não reconhecido entre workflows, sem sincronização; destinatário embutido apenas no backend privado.
 
-Riscos a verificar: falha de autenticação, 429/cota, resposta inválida, execução parcialmente falha, teste confundido com produção, e-mail repetido, publicação de estado privado.
+Registro final: 14 testes Python e 2 testes Node aprovados. QA de navegador incluiu desktop, 320/375/390 px, filtros, gráfico, erro de leitura e escape de HTML. Revisão independente encontrou e corrigiu comparação entre itinerários distintos, JSON com estrutura inválida e corte de alertas. Chave de deploy restrita ao público criada e protegida no secret PUBLIC_DATA_SSH_KEY. Execução em Actions comprovou persistência e sincronização; diagnóstico credentials_missing publicado. Pages confirmado em produção. Destinatário removido do código atual, nenhum e-mail no histórico de arquivos públicos. Nenhuma alteração em master ou visibilidade.
 
-Execu??o: checkout dedicado em branches do Radar, sem altera??o de master. Revis?o independente encontrou e corrigiu compara??o entre viagens diferentes, estrutura JSON inv?lida e corte de alertas. Regress?es adicionadas, 14 testes Python aprovados. 2 testes Node e QA de navegador (inclusive falha de leitura, ranking, filtros, SVG e escape de HTML) aprovados. Chave deploy exclusiva do p?blico criada e guardada no secret PUBLIC_DATA_SSH_KEY do backend; chave tempor?ria removida. Nenhum e-mail encontrado no hist?rico de arquivos p?blicos do Radar.
-
-Apura??o recorrente: uma vaga por rodada (quando j? existem oportunidades e o lote permite) revisita uma viagem da watchlist; as demais vagas exploram novas combina??es. A watchlist privada guarda a melhor combina??o conhecida por rota/temporada. Isso permite detectar quedas compar?veis sem aguardar a volta de toda a varredura.
+Pendências externas: credenciais Amadeus de produção, SMTP/Gmail e destinatário; autorização de um workflow despachante na branch padrão ou agendador externo para ativar cron. Nenhuma consulta real de tarifa ou envio real de e-mail realizado.
