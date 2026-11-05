@@ -2,7 +2,7 @@
   "status": "credentials_missing",
   "environment": "production",
   "updated_at": null,
-  "last_attempt_at": "2026-11-05T04:25:55.989317+00:00",
+  "last_attempt_at": "2026-11-05T04:36:00.177497+00:00",
   "last_success_at": null,
   "requests": 0,
   "successful_queries": 0,
