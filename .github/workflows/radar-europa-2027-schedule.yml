@@ -1,0 +1,11 @@
+name: Radar Europa 2027 - agendamento
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  monitor:
+    uses: foxnove/site/.github/workflows/radar-europa-2027.yml@radar-europa-2027
+    secrets: inherit
