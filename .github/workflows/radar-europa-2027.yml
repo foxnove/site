@@ -41,13 +41,13 @@ jobs:
           git add radar-europa-2027/docs/data.json
           if [ -d radar-europa-2027/private ]; then git add radar-europa-2027/private; fi
           git diff --cached --quiet || (git commit -m "Atualizar preços Radar Europa" && git push)
-      - name: Checkout public Radar branch with repository-specific deploy key
+      - name: Checkout public site master
         uses: actions/checkout@v4
         with:
-          repository: foxnove/youtube
-          ref: radar-europa-2027
+          repository: foxnove/site
+          ref: master
           path: public
-          ssh-key: ${{ secrets.PUBLIC_DATA_SSH_KEY }}
+          token: ${{ github.token }}
           sparse-checkout: radar-europa-2027
       - name: Synchronize allowlisted public data
         run: python backend/radar-europa-2027/sync_public.py --checkout public
