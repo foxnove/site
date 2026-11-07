@@ -2,16 +2,16 @@
   "provider": "serpapi",
   "status": "ok",
   "environment": "production",
-  "updated_at": "2026-11-05T04:56:30.783943+00:00",
-  "last_attempt_at": "2026-11-05T04:56:30.783943+00:00",
-  "last_success_at": "2026-11-05T04:56:30.783943+00:00",
+  "updated_at": "2026-11-07T13:18:47.123984+00:00",
+  "last_attempt_at": "2026-11-07T13:18:47.123984+00:00",
+  "last_success_at": "2026-11-07T13:18:47.123984+00:00",
   "requests": 1,
   "successful_queries": 1,
-  "queries_total": 1,
+  "queries_total": 2,
   "errors": [],
   "quota": {
     "month": "2026-11",
-    "used": 1,
+    "used": 2,
     "limit": 180,
     "daily_used": 1,
     "daily_limit": 6
@@ -22,7 +22,7 @@
   },
   "email_status": "not_configured",
   "coverage": {
-    "mode": "rotating_sample_and_watchlist",
+    "mode": "alternating_travel_seasons",
     "combinations": 4318,
     "queries_this_run": 1,
     "durations": [
@@ -37,132 +37,53 @@
   "schema_version": 2,
   "offers": [
     {
-      "id": "5ede64bc7a57861f1897d212",
+      "id": "e858715a15510ee0f12cce15",
       "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5111.0,
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 6204.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "LATAM"
+        "Tap Air Portugal"
       ],
       "stops": [
-        1,
+        0,
         null
       ],
       "connections": [
-        [
-          "CGH"
-        ],
+        [],
         null
       ],
       "durations": [
-        "PT19H10M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
-      "change_percent": null,
-      "historical_low": 5111.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "0a3a3789cc56f7f0c08fb739",
-      "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5352.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "CGH"
-        ],
-        null
-      ],
-      "durations": [
-        "PT17H25M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
-      "change_percent": null,
-      "historical_low": 5352.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "4493f1b362cffbdf348c9857",
-      "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5633.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Air Europa"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "MAD"
-        ],
-        null
-      ],
-      "durations": [
-        "PT12H40M",
+        "PT8H20M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": null,
       "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
       "change_percent": null,
-      "historical_low": 5633.0,
+      "historical_low": 6204.0,
       "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
+      "period": "jul-ago",
+      "outbound_direct": true,
       "outbound_domestic_connection": false,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "921b5783bf24f68a464e8e2b",
+      "id": "57fea3eebe75f4a452598023",
       "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 6206.0,
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 6957.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "Azul"
+        "Gol",
+        "Tap Air Portugal"
       ],
       "stops": [
         1,
@@ -170,34 +91,75 @@
       ],
       "connections": [
         [
-          "VCP"
+          "NAT"
         ],
         null
       ],
       "durations": [
-        "PT17H0M",
+        "PT14H55M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
       "change_percent": null,
-      "historical_low": 6206.0,
+      "historical_low": 6957.0,
       "promotion": false,
-      "period": "fev-mar",
+      "period": "jul-ago",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "d29ccddb2876c08d8bbf4e00",
+      "id": "9ffa6d5aa7880661faaa110a",
       "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 6354.0,
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 6961.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Gol",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "MCZ",
+          "NAT"
+        ],
+        null
+      ],
+      "durations": [
+        "PT14H50M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
+      "change_percent": null,
+      "historical_low": 6961.0,
+      "promotion": false,
+      "period": "jul-ago",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "fc0c1a4b187c0329e04e56a5",
+      "destination": "LIS",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 6984.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -215,29 +177,108 @@
         null
       ],
       "durations": [
-        "PT13H0M",
+        "PT12H45M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
       "change_percent": null,
-      "historical_low": 6354.0,
+      "historical_low": 6984.0,
       "promotion": false,
-      "period": "fev-mar",
+      "period": "jul-ago",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "f480bf046c68653f8070e28c",
+      "id": "0b53a629180eff662cc11adf",
       "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 6591.0,
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 7175.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "LATAM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "GRU"
+        ],
+        null
+      ],
+      "durations": [
+        "PT30H25M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
+      "change_percent": null,
+      "historical_low": 7175.0,
+      "promotion": false,
+      "period": "jul-ago",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "651d5594ec20301516cf8466",
+      "destination": "LIS",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 7211.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "LATAM",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "GIG"
+        ],
+        null
+      ],
+      "durations": [
+        "PT15H55M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
+      "change_percent": null,
+      "historical_low": 7211.0,
+      "promotion": false,
+      "period": "jul-ago",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "59103f9aaaa8fb27faa85ff2",
+      "destination": "LIS",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 7222.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -255,59 +296,102 @@
         null
       ],
       "durations": [
-        "PT13H25M",
+        "PT15H10M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
       "change_percent": null,
-      "historical_low": 6591.0,
+      "historical_low": 7222.0,
       "promotion": false,
-      "period": "fev-mar",
+      "period": "jul-ago",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "e0ec6d877163527faa8f7cc0",
+      "id": "a29b6f499b3e6cde04686a3c",
       "destination": "LIS",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 7884.0,
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 7222.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
+        "Gol",
         "Tap Air Portugal"
       ],
       "stops": [
-        0,
+        1,
         null
       ],
       "connections": [
-        [],
+        [
+          "BSB"
+        ],
         null
       ],
       "durations": [
-        "PT8H15M",
+        "PT15H0M",
         null
       ],
       "baggage": [],
       "direct": null,
-      "domestic_connection": null,
+      "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-05T04:56:30.783943+00:00",
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
       "change_percent": null,
-      "historical_low": 7884.0,
+      "historical_low": 7222.0,
       "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": true,
-      "outbound_domestic_connection": false,
+      "period": "jul-ago",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDMtMDZqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "3c670fc6b23a3b5c8e422554",
+      "destination": "LIS",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 7987.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Gol",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "GIG"
+        ],
+        null
+      ],
+      "durations": [
+        "PT14H25M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-07T13:18:47.123984+00:00",
+      "change_percent": null,
+      "historical_low": 7987.0,
+      "promotion": false,
+      "period": "jul-ago",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTElTGh4SCjIwMjctMDctMTVqBwgBEgNMSVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     }
   ],
   "history": [
@@ -316,6 +400,12 @@
       "destination": "LIS",
       "period": "fev-mar",
       "price": 5111.0
+    },
+    {
+      "at": "2026-11-07T13:18:47.123984+00:00",
+      "destination": "LIS",
+      "period": "jul-ago",
+      "price": 6204.0
     }
   ]
 }
