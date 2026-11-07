@@ -70,7 +70,7 @@ class SerpTests(unittest.TestCase):
                 return Response()
         with tempfile.TemporaryDirectory() as directory,patch.dict(os.environ,{'SERPAPI_API_KEY':'test-only'},clear=True),patch.object(serp.requests,'Session',Session):
             root=Path(directory)
-            (root/'config.json').write_text(json.dumps({'origin':'SSA','max_brl':4500,'windows':[['2027-02-20','2027-03-31']],'destinations':['LIS'],'monthly_request_budget':180,'daily_request_budget':6}))
+            (root/'config.json').write_text(json.dumps({'origin':'SSA','max_brl':4500,'windows':[['2027-02-20','2027-03-31'],['2027-07-21','2027-08-13']],'destinations':['LIS'],'monthly_request_budget':180,'daily_request_budget':6}))
             self.assertEqual(serp.main(root),0)
             text=(root/'docs/data.json').read_text(encoding='utf-8');data=json.loads(text)
             self.assertEqual(data['status'],'ok')
