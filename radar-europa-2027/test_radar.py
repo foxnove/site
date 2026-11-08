@@ -57,6 +57,7 @@ class RadarTests(unittest.TestCase):
             self.assertEqual(radar.send_alerts(alerts,state,'now'),'sent')
         self.assertEqual(len(state['alerts']),25)
         self.assertEqual(messages[0].get_content().count('SSA → LIS'),25)
+        self.assertIn('https://foxnove.github.io/site/radar-europa-2027/', messages[0].get_content())
 
     def test_search_explicitly_can_prioritize_nonstop_flights(self):
         class Session:

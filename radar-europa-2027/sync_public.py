@@ -12,7 +12,9 @@ def main():
     def git(*args):
         return subprocess.check_output(['git','-C',str(checkout),*args],text=True).strip()
     remote = git('remote','get-url','origin')
-    if remote not in ('git@github.com:foxnove/site.git','https://github.com/foxnove/site.git'):
+    if remote not in ('git@github.com:foxnove/site.git',
+                      'https://github.com/foxnove/site.git',
+                      'https://github.com/foxnove/site'):
         raise ValueError('Unexpected public repository')
     if git('branch','--show-current') != 'master':
         raise ValueError('Unexpected public branch')

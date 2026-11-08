@@ -209,7 +209,7 @@ def send_alerts(alerts,state,now):
     lines = []
     for x in alerts:
         lines.append(f"SSA → {x['destination']} | R$ {x['price']:.2f} por pessoa, ida e volta\n{x['departure']} → {x['return']} | {', '.join(x.get('airline_names',[]))}\nEscalas ida/volta: {x.get('stops')} | Conexões: {x.get('connections')}\nVolta: {'a confirmar (não consultada para economizar créditos)' if x.get('return_details_available') is False else 'conforme itinerário'}\nVariação: {x.get('change_percent')}% | Mínimo histórico: R$ {x['historical_low']:.2f}\n{x.get('source_url','')}\n")
-    msg.set_content('\n'.join(lines)+'\nTarifas sujeitas a alteração e reconfirmação. O link Google Flights é para consulta, não garantia de compra.\nhttps://foxnove.github.io/youtube/radar-europa-2027/')
+    msg.set_content('\n'.join(lines)+'\nTarifas sujeitas a alteração e reconfirmação. O link Google Flights é para consulta, não garantia de compra.\nhttps://foxnove.github.io/site/radar-europa-2027/')
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com',465,timeout=30) as smtp:
             smtp.login(os.environ['SMTP_USER'],os.environ['SMTP_APP_PASSWORD'])
