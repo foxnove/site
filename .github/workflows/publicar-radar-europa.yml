@@ -10,7 +10,47 @@ concurrency:
   group: pages-site
   cancel-in-progress: false
 jobs:
+  configuration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: read
+    outputs:
+      enabled: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - name: Verificar ativacao do GitHub Pages
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'JS'
+          import { appendFileSync } from 'node:fs';
+          const repository = process.env.GITHUB_REPOSITORY;
+          const response = await fetch(`${process.env.GITHUB_API_URL}/repos/${repository}/pages`, {
+            headers: {
+              Authorization: `Bearer ${process.env.GH_TOKEN}`,
+              Accept: 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28'
+            }
+          });
+          let enabled = false;
+          if (response.ok) {
+            const pages = await response.json();
+            enabled = pages.build_type === 'workflow';
+          } else if (response.status !== 404) {
+            throw new Error(`Nao foi possivel verificar o GitHub Pages: HTTP ${response.status}`);
+          }
+          appendFileSync(process.env.GITHUB_OUTPUT, `enabled=${enabled}\n`);
+          const settings = `https://github.com/${repository}/settings/pages`;
+          const summary = enabled
+            ? 'GitHub Pages ativo para publicacao por GitHub Actions.\n'
+            : `## Publicacao pendente\nO painel ainda nao esta publicado. Ative **GitHub Actions** em **Build and deployment > Source**: ${settings}\nA coleta de tarifas continua no agendamento; esta verificacao nao ativa o Pages nem publica o painel.\n`;
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
+          console.log(enabled ? 'GitHub Pages pronto para publicar.' : 'Publicacao pendente: ativacao administrativa do GitHub Pages necessaria.');
+          JS
   deploy:
+    needs: configuration
+    if: needs.configuration.outputs.enabled == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
@@ -30,7 +70,7 @@ jobs:
           touch _site/.nojekyll
           python -m json.tool _site/radar-europa-2027/data.json > /dev/null
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
       - id: deployment

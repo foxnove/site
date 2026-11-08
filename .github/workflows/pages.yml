@@ -3,6 +3,11 @@ name: Publicar site e Radar Europa 2027 no GitHub Pages
 on:
   push:
     branches: [master]
+    paths:
+      - index.html
+      - 'radar-europa-2027/**'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/publicar-radar-europa.yml'
   workflow_dispatch:
 
 permissions:
@@ -10,25 +15,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: github-pages
-  cancel-in-progress: false
-
 jobs:
   publicar:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Baixar site publico
-        uses: actions/checkout@v4
-      - name: Preparar GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Empacotar site sem alterar outros projetos
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: '.'
-      - name: Publicar GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    uses: ./.github/workflows/publicar-radar-europa.yml

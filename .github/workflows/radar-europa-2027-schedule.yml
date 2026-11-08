@@ -9,3 +9,10 @@ jobs:
   monitor:
     uses: foxnove/site/.github/workflows/radar-europa-2027.yml@radar-europa-2027
     secrets: inherit
+  publish:
+    needs: monitor
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publicar-radar-europa.yml
