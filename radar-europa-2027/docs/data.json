@@ -1,12 +1,12 @@
 {
   "provider": "serpapi",
-  "status": "ok",
+  "status": "cooldown",
   "environment": "production",
   "updated_at": "2026-11-07T21:57:29.950361+00:00",
-  "last_attempt_at": "2026-11-07T21:57:29.950361+00:00",
+  "last_attempt_at": "2026-11-08T01:00:11.395539+00:00",
   "last_success_at": "2026-11-07T21:57:29.950361+00:00",
-  "requests": 1,
-  "successful_queries": 1,
+  "requests": 0,
+  "successful_queries": 0,
   "queries_total": 3,
   "errors": [],
   "quota": {
@@ -21,18 +21,6 @@
     "interval_hours": 6
   },
   "email_status": "not_configured",
-  "coverage": {
-    "mode": "alternating_travel_seasons",
-    "combinations": 4318,
-    "queries_this_run": 1,
-    "durations": [
-      14,
-      18,
-      21,
-      24
-    ],
-    "return_details": "not_requested_to_save_credits"
-  },
   "max_brl": 4500,
   "schema_version": 2,
   "offers": [
