@@ -2,22 +2,25 @@
   "provider": "serpapi",
   "status": "partial",
   "environment": "production",
-  "updated_at": "2026-11-11T19:41:35.659505+00:00",
-  "last_attempt_at": "2026-11-11T19:41:35.659505+00:00",
-  "last_success_at": "2026-11-11T19:41:35.659505+00:00",
+  "updated_at": "2026-11-12T07:22:09.595450+00:00",
+  "last_attempt_at": "2026-11-12T07:22:09.595450+00:00",
+  "last_success_at": "2026-11-12T07:22:09.595450+00:00",
   "requests": 1,
   "successful_queries": 1,
-  "queries_total": 12,
+  "queries_total": 13,
   "errors": [
+    {
+      "code": "invalid_offer"
+    },
     {
       "code": "invalid_offer"
     }
   ],
   "quota": {
     "month": "2026-11",
-    "used": 12,
+    "used": 13,
     "limit": 180,
-    "daily_used": 2,
+    "daily_used": 1,
     "daily_limit": 6
   },
   "scheduler": {
@@ -41,128 +44,11 @@
   "schema_version": 2,
   "offers": [
     {
-      "id": "f1a6c90df1f5edb46d4690ed",
-      "destination": "MXP",
+      "id": "486a37befa52d6996a2f65f9",
+      "destination": "ORY",
       "departure": "2027-02-20",
       "return": "2027-03-06",
-      "price": 4907.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "GRU"
-        ],
-        null
-      ],
-      "durations": [
-        "PT24H55M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 4907.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "707000e7cb92909f485f5e7a",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 4907.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "CGH"
-        ],
-        null
-      ],
-      "durations": [
-        "PT21H15M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 4907.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "50749a13e25be4e3741f81cb",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5218.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "GRU"
-        ],
-        null
-      ],
-      "durations": [
-        "PT18H15M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 5218.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "5771672b407c98c784bddc00",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5253.0,
+      "price": 5349.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -179,139 +65,22 @@
         null
       ],
       "durations": [
-        "PT29H45M",
+        "PT12H45M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": null,
       "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 5253.0,
+      "historical_low": 5349.0,
       "promotion": false,
       "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": false,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "ac62902c77be82a329a125b3",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5268.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Air Europa"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "MAD"
-        ],
-        null
-      ],
-      "durations": [
-        "PT13H45M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": null,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 5268.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": false,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "b5b5fe312bf93420d14e6724",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 5549.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "GRU"
-        ],
-        null
-      ],
-      "durations": [
-        "PT15H20M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 5549.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "560ba56b09209261ef390fe7",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 5674.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Tap Air Portugal"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "LIS"
-        ],
-        null
-      ],
-      "durations": [
-        "PT14H15M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": null,
-      "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
-      "change_percent": null,
-      "historical_low": 5674.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": false,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "3f12502257d63c146d374de8",
@@ -353,50 +122,11 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDctMTVqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "b602b1afc05d6aae68258996",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 6211.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "LATAM"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "GRU"
-        ],
-        null
-      ],
-      "durations": [
-        "PT16H30M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
-      "change_percent": null,
-      "historical_low": 6211.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "44966d316d271b010398bdf2",
-      "destination": "MXP",
+      "id": "622faccb8715b56b65947d56",
+      "destination": "ORY",
       "departure": "2027-02-20",
       "return": "2027-03-06",
-      "price": 6405.0,
+      "price": 6055.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -409,67 +139,192 @@
       ],
       "connections": [
         [
-          "FOR",
+          "GRU",
           "LIS"
         ],
         null
       ],
       "durations": [
-        "PT19H25M",
+        "PT19H0M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 6405.0,
+      "historical_low": 6055.0,
       "promotion": false,
       "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "b17b513fb2c7147d5aa6d6e9",
-      "destination": "MXP",
+      "id": "05466c5908ea797ce5db1289",
+      "destination": "ORY",
       "departure": "2027-02-20",
       "return": "2027-03-06",
-      "price": 6629.0,
+      "price": 6075.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "Air France"
+        "LATAM",
+        "Tap Air Portugal"
       ],
       "stops": [
-        1,
+        2,
         null
       ],
       "connections": [
         [
-          "CDG"
+          "BSB",
+          "LIS"
         ],
         null
       ],
       "durations": [
-        "PT24H25M",
+        "PT19H55M",
         null
       ],
       "baggage": [],
       "direct": null,
-      "domestic_connection": null,
+      "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 6629.0,
+      "historical_low": 6075.0,
       "promotion": false,
       "period": "fev-mar",
       "outbound_direct": false,
-      "outbound_domestic_connection": false,
+      "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "a6dcaac1a226c6c820bc8c41",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6466.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air Europa",
+        "LATAM"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GRU",
+          "MAD"
+        ],
+        null
+      ],
+      "durations": [
+        "PT18H45M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
+      "change_percent": null,
+      "historical_low": 6466.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "1e3b757e99fd4d63473ae9c7",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6599.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Azul",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "REC",
+          "LIS"
+        ],
+        null
+      ],
+      "durations": [
+        "PT22H5M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
+      "change_percent": null,
+      "historical_low": 6599.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "0dd957011000f2320a6b5128",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6599.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Azul",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "REC",
+          "LIS"
+        ],
+        null
+      ],
+      "durations": [
+        "PT22H5M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
+      "change_percent": null,
+      "historical_low": 6599.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "52cd6be0260129d987832c0a",
@@ -595,45 +450,6 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDctMTVqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "985cfcd60cada2078bba1e31",
-      "destination": "MXP",
-      "departure": "2027-02-20",
-      "return": "2027-03-06",
-      "price": 6697.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Air France"
-      ],
-      "stops": [
-        1,
-        null
-      ],
-      "connections": [
-        [
-          "CDG"
-        ],
-        null
-      ],
-      "durations": [
-        "PT13H10M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": null,
-      "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
-      "change_percent": null,
-      "historical_low": 6697.0,
-      "promotion": false,
-      "period": "fev-mar",
-      "outbound_direct": false,
-      "outbound_domestic_connection": false,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
       "id": "aba32cd0c036273257c87037",
       "destination": "ORY",
       "departure": "2027-07-01",
@@ -757,56 +573,57 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDctMTVqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "5cb9f17c610eaefd76fcbe00",
-      "destination": "MXP",
+      "id": "62f10ec35aa0e8c23c59c41c",
+      "destination": "ORY",
       "departure": "2027-02-20",
       "return": "2027-03-06",
-      "price": 6894.0,
+      "price": 6929.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "Air Europa",
-        "LATAM"
+        "Gol",
+        "Tap Air Portugal"
       ],
       "stops": [
-        2,
+        3,
         null
       ],
       "connections": [
         [
-          "GRU",
-          "MAD"
+          "MCZ",
+          "NAT",
+          "LIS"
         ],
         null
       ],
       "durations": [
-        "PT18H10M",
+        "PT19H30M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 6894.0,
+      "historical_low": 6929.0,
       "promotion": false,
       "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "c39dc41be789cd537ad9808e",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 7272.0,
+      "id": "39d8565cfed20451c74638ad",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6943.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "Azul",
+        "Gol",
         "Tap Air Portugal"
       ],
       "stops": [
@@ -815,28 +632,69 @@
       ],
       "connections": [
         [
-          "REC",
+          "NAT",
           "LIS"
         ],
         null
       ],
       "durations": [
-        "PT15H50M",
+        "PT19H40M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 7272.0,
+      "historical_low": 6943.0,
       "promotion": false,
-      "period": "jul-ago",
+      "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "1ad4df4d3589b3fd14b808b5",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7329.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Gol",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GIG",
+          "LIS"
+        ],
+        null
+      ],
+      "durations": [
+        "PT20H40M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
+      "change_percent": null,
+      "historical_low": 7329.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "d16ccda291fd747561fa3c1b",
@@ -880,11 +738,11 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDctMTVqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "135ac435eca4059ba926c980",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 7623.0,
+      "id": "af00bde4195303297e64dcce",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7655.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -897,35 +755,35 @@
       ],
       "connections": [
         [
-          "FOR",
+          "GIG",
           "LIS"
         ],
         null
       ],
       "durations": [
-        "PT17H55M",
+        "PT22H20M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 7623.0,
+      "historical_low": 7655.0,
       "promotion": false,
-      "period": "jul-ago",
+      "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "d54c7fe79c11742b51c9c5cc",
-      "destination": "MXP",
+      "id": "963332386134c5e209a120bd",
+      "destination": "ORY",
       "departure": "2027-02-20",
       "return": "2027-03-06",
-      "price": 7673.0,
+      "price": 7693.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
@@ -942,34 +800,35 @@
         null
       ],
       "durations": [
-        "PT12H30M",
+        "PT12H25M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": null,
       "international_connection": null,
-      "checked_at": "2026-11-11T06:39:50.438626+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 7673.0,
+      "historical_low": 7693.0,
       "promotion": false,
       "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": false,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDMtMDZqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "651a9b7f1d715fb7203fa209",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 8214.0,
+      "id": "dbe4f0b792b2c851e3b96048",
+      "destination": "ORY",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 10216.0,
       "currency": "BRL",
       "airlines": [],
       "airline_names": [
-        "Air France",
-        "Gol"
+        "British Airways",
+        "LATAM",
+        "Vueling"
       ],
       "stops": [
         2,
@@ -977,69 +836,28 @@
       ],
       "connections": [
         [
-          "FOR",
-          "CDG"
+          "GRU",
+          "LHR"
         ],
         null
       ],
       "durations": [
-        "PT19H15M",
+        "PT26H50M",
         null
       ],
       "baggage": [],
       "direct": null,
       "domestic_connection": true,
       "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
+      "checked_at": "2026-11-12T07:22:09.595450+00:00",
       "change_percent": null,
-      "historical_low": 8214.0,
+      "historical_low": 10216.0,
       "promotion": false,
-      "period": "jul-ago",
+      "period": "fev-mar",
       "outbound_direct": false,
       "outbound_domestic_connection": true,
       "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "aa07f07389745fe24a957023",
-      "destination": "MXP",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 9313.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Air France",
-        "Gol"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "GIG",
-          "CDG"
-        ],
-        null
-      ],
-      "durations": [
-        "PT19H5M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-10T19:49:57.622355+00:00",
-      "change_percent": null,
-      "historical_low": 9313.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDTVhQGh4SCjIwMjctMDctMTVqBwgBEgNNWFByBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDT1JZGh4SCjIwMjctMDMtMDZqBwgBEgNPUllyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "b817cb08cd671d99288589ae",
@@ -1155,6 +973,12 @@
       "destination": "ORY",
       "period": "jul-ago",
       "price": 5817.0
+    },
+    {
+      "at": "2026-11-12T07:22:09.595450+00:00",
+      "destination": "ORY",
+      "period": "fev-mar",
+      "price": 5349.0
     }
   ]
 }
