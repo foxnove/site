@@ -2,18 +2,18 @@
   "provider": "serpapi",
   "status": "ok",
   "environment": "production",
-  "updated_at": "2026-11-15T18:56:51.315206+00:00",
-  "last_attempt_at": "2026-11-15T18:56:51.315206+00:00",
-  "last_success_at": "2026-11-15T18:56:51.315206+00:00",
+  "updated_at": "2026-11-16T06:43:58.134787+00:00",
+  "last_attempt_at": "2026-11-16T06:43:58.134787+00:00",
+  "last_success_at": "2026-11-16T06:43:58.134787+00:00",
   "requests": 1,
   "successful_queries": 1,
-  "queries_total": 20,
+  "queries_total": 21,
   "errors": [],
   "quota": {
     "month": "2026-11",
-    "used": 20,
+    "used": 21,
     "limit": 180,
-    "daily_used": 2,
+    "daily_used": 1,
     "daily_limit": 6
   },
   "scheduler": {
@@ -36,6 +36,126 @@
   "max_brl": 4500,
   "schema_version": 2,
   "offers": [
+    {
+      "id": "3e297063ac183de83a955cca",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 5455.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Gol",
+        "KLM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "GRU"
+        ],
+        null
+      ],
+      "durations": [
+        "PT19H10M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 5455.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "0effdbfebfaed1e65c93aab8",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 5455.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "KLM",
+        "LATAM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "GRU"
+        ],
+        null
+      ],
+      "durations": [
+        "PT18H15M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 5455.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "04c485d4f7484d633ec50f53",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 5455.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "KLM",
+        "LATAM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "CGH"
+        ],
+        null
+      ],
+      "durations": [
+        "PT17H10M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 5455.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
     {
       "id": "a31e848fe45739513393f461",
       "destination": "FRA",
@@ -117,6 +237,45 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDRlJBGh4SCjIwMjctMDMtMDZqBwgBEgNGUkFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
+      "id": "ff1d91f897bc8a86cc53f747",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 5890.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air Europa"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "MAD"
+        ],
+        null
+      ],
+      "durations": [
+        "PT14H5M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": null,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 5890.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": false,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
       "id": "d34e1188b33534346fedceab",
       "destination": "FRA",
       "departure": "2027-02-20",
@@ -154,6 +313,45 @@
       "outbound_domestic_connection": false,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDRlJBGh4SCjIwMjctMDMtMDZqBwgBEgNGUkFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "3a578014e71aa2a75d779ec2",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6352.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air France"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "CDG"
+        ],
+        null
+      ],
+      "durations": [
+        "PT14H35M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": null,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 6352.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": false,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "8f14a481656617920ac70359",
@@ -275,6 +473,86 @@
       "outbound_domestic_connection": false,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDRlJBGh4SCjIwMjctMDMtMDZqBwgBEgNGUkFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "f3fdfd4ba15cf3c90d5e0b22",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6390.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air France",
+        "KLM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "CDG"
+        ],
+        null
+      ],
+      "durations": [
+        "PT12H35M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": null,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 6390.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": false,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "9d7d9932184bd5334df00b9c",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 6463.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air France",
+        "KLM"
+      ],
+      "stops": [
+        1,
+        null
+      ],
+      "connections": [
+        [
+          "CDG"
+        ],
+        null
+      ],
+      "durations": [
+        "PT13H5M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": null,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 6463.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": false,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "9c85d21f3d14204fe6869ea2",
@@ -600,6 +878,47 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDRlJBGh4SCjIwMjctMDMtMDZqBwgBEgNGUkFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
+      "id": "b7fba1346d36c46d27a7c496",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7365.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Air Canada",
+        "Gol"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GRU",
+          "YYZ"
+        ],
+        null
+      ],
+      "durations": [
+        "PT41H5M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 7365.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
       "id": "69fad475f22f672f293b7eb0",
       "destination": "AMS",
       "departure": "2027-07-01",
@@ -639,6 +958,47 @@
       "outbound_domestic_connection": true,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDctMTVqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "311c591bd7212a857d6f0c48",
+      "destination": "AMS",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7855.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "Azul",
+        "Tap Air Portugal"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "REC",
+          "LIS"
+        ],
+        null
+      ],
+      "durations": [
+        "PT17H25M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-16T06:43:58.134787+00:00",
+      "change_percent": null,
+      "historical_low": 7855.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDQU1TGh4SCjIwMjctMDMtMDZqBwgBEgNBTVNyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "a49599318f574e546a73987f",
@@ -1045,6 +1405,12 @@
       "destination": "AMS",
       "period": "jul-ago",
       "price": 6375.0
+    },
+    {
+      "at": "2026-11-16T06:43:58.134787+00:00",
+      "destination": "AMS",
+      "period": "fev-mar",
+      "price": 5455.0
     }
   ]
 }
