@@ -3,13 +3,13 @@
     "month": "2026-11",
     "requests": 0
   },
-  "queries_total": 21,
+  "queries_total": 22,
   "serpapi_usage": {
     "month": "2026-11",
-    "requests": 21,
+    "requests": 22,
     "day": "2026-11-16",
-    "daily_requests": 1,
-    "last_search_at": "2026-11-16T06:43:58.134787+00:00"
+    "daily_requests": 2,
+    "last_search_at": "2026-11-16T22:15:56.848971+00:00"
   },
   "history": [
     {
@@ -137,6 +137,12 @@
       "destination": "AMS",
       "period": "fev-mar",
       "price": 5455.0
+    },
+    {
+      "at": "2026-11-16T22:15:56.848971+00:00",
+      "destination": "ZAG",
+      "period": "jul-ago",
+      "price": 9114.0
     }
   ],
   "alerts": {},
@@ -1195,6 +1201,31 @@
       "price": 7855.0,
       "low": 7855.0,
       "at": "2026-11-16T06:43:58.134787+00:00"
+    },
+    "95c363b1f6655b07415790a8": {
+      "price": 9114.0,
+      "low": 9114.0,
+      "at": "2026-11-16T22:15:56.848971+00:00"
+    },
+    "dae79bc9d56d8bbafac688a5": {
+      "price": 9605.0,
+      "low": 9605.0,
+      "at": "2026-11-16T22:15:56.848971+00:00"
+    },
+    "de27fab5971c0bf825abf622": {
+      "price": 10210.0,
+      "low": 10210.0,
+      "at": "2026-11-16T22:15:56.848971+00:00"
+    },
+    "8215efad7e7410f354fc142f": {
+      "price": 10911.0,
+      "low": 10911.0,
+      "at": "2026-11-16T22:15:56.848971+00:00"
+    },
+    "e0751b45608d8d916aed4d46": {
+      "price": 15024.0,
+      "low": 15024.0,
+      "at": "2026-11-16T22:15:56.848971+00:00"
     }
   },
   "cursor": 1,
@@ -1318,11 +1349,17 @@
       "departure": "2027-02-20",
       "return": "2027-03-06",
       "price": 5455.0
+    },
+    "ZAG|jul-ago": {
+      "destination": "ZAG",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 9114.0
     }
   },
   "pending_alerts": {},
   "season_cursors": {
-    "jul-ago": 10,
+    "jul-ago": 11,
     "fev-mar": 10
   }
 }
