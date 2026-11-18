@@ -3,13 +3,13 @@
     "month": "2026-11",
     "requests": 0
   },
-  "queries_total": 24,
+  "queries_total": 25,
   "serpapi_usage": {
     "month": "2026-11",
-    "requests": 24,
-    "day": "2026-11-17",
-    "daily_requests": 2,
-    "last_search_at": "2026-11-17T21:02:07.862603+00:00"
+    "requests": 25,
+    "day": "2026-11-18",
+    "daily_requests": 1,
+    "last_search_at": "2026-11-18T07:40:13.713193+00:00"
   },
   "history": [
     {
@@ -155,6 +155,12 @@
       "destination": "TIA",
       "period": "jul-ago",
       "price": 7692.0
+    },
+    {
+      "at": "2026-11-18T07:40:13.713193+00:00",
+      "destination": "TIA",
+      "period": "fev-mar",
+      "price": 7454.0
     }
   ],
   "alerts": {},
@@ -1328,6 +1334,26 @@
       "price": 14628.0,
       "low": 14628.0,
       "at": "2026-11-17T21:02:07.862603+00:00"
+    },
+    "84cf23c257a33487c589a327": {
+      "price": 7454.0,
+      "low": 7454.0,
+      "at": "2026-11-18T07:40:13.713193+00:00"
+    },
+    "dfe8741d410cc685e6cfb37b": {
+      "price": 7883.0,
+      "low": 7883.0,
+      "at": "2026-11-18T07:40:13.713193+00:00"
+    },
+    "a0d402396d772c2e2c6ec5c4": {
+      "price": 7888.0,
+      "low": 7888.0,
+      "at": "2026-11-18T07:40:13.713193+00:00"
+    },
+    "fbeace56d24c86e141aaa94a": {
+      "price": 11545.0,
+      "low": 11545.0,
+      "at": "2026-11-18T07:40:13.713193+00:00"
     }
   },
   "cursor": 1,
@@ -1469,11 +1495,17 @@
       "departure": "2027-07-01",
       "return": "2027-07-15",
       "price": 7692.0
+    },
+    "TIA|fev-mar": {
+      "destination": "TIA",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7454.0
     }
   },
   "pending_alerts": {},
   "season_cursors": {
     "jul-ago": 12,
-    "fev-mar": 11
+    "fev-mar": 12
   }
 }
