@@ -2,18 +2,18 @@
   "provider": "serpapi",
   "status": "ok",
   "environment": "production",
-  "updated_at": "2026-11-17T21:02:07.862603+00:00",
-  "last_attempt_at": "2026-11-17T21:02:07.862603+00:00",
-  "last_success_at": "2026-11-17T21:02:07.862603+00:00",
+  "updated_at": "2026-11-18T07:40:13.713193+00:00",
+  "last_attempt_at": "2026-11-18T07:40:13.713193+00:00",
+  "last_success_at": "2026-11-18T07:40:13.713193+00:00",
   "requests": 1,
   "successful_queries": 1,
-  "queries_total": 24,
+  "queries_total": 25,
   "errors": [],
   "quota": {
     "month": "2026-11",
-    "used": 24,
+    "used": 25,
     "limit": 180,
-    "daily_used": 2,
+    "daily_used": 1,
     "daily_limit": 6
   },
   "scheduler": {
@@ -76,6 +76,47 @@
       "outbound_domestic_connection": true,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDMtMDZqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "84cf23c257a33487c589a327",
+      "destination": "TIA",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7454.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "LATAM",
+        "Lufthansa"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GRU",
+          "FRA"
+        ],
+        null
+      ],
+      "durations": [
+        "PT28H45M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-18T07:40:13.713193+00:00",
+      "change_percent": null,
+      "historical_low": 7454.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDMtMDZqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "a1a4ed2491b63ea52a435fa2",
@@ -240,6 +281,88 @@
       "outbound_domestic_connection": true,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "dfe8741d410cc685e6cfb37b",
+      "destination": "TIA",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7883.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "LATAM",
+        "Lufthansa"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GIG",
+          "FRA"
+        ],
+        null
+      ],
+      "durations": [
+        "PT25H55M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-18T07:40:13.713193+00:00",
+      "change_percent": null,
+      "historical_low": 7883.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDMtMDZqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
+      "id": "a0d402396d772c2e2c6ec5c4",
+      "destination": "TIA",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 7888.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "LATAM",
+        "Lufthansa"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GRU",
+          "FRA"
+        ],
+        null
+      ],
+      "durations": [
+        "PT21H15M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-18T07:40:13.713193+00:00",
+      "change_percent": null,
+      "historical_low": 7888.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDMtMDZqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "968cc48925354a706677f629",
@@ -448,47 +571,6 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDMtMDZqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "95c363b1f6655b07415790a8",
-      "destination": "ZAG",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 9114.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Croatia",
-        "Tap Air Portugal"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "LIS",
-          "ZRH"
-        ],
-        null
-      ],
-      "durations": [
-        "PT16H50M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": null,
-      "international_connection": null,
-      "checked_at": "2026-11-16T22:15:56.848971+00:00",
-      "change_percent": null,
-      "historical_low": 9114.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": false,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDctMTVqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
       "id": "adc4c1ead51bad847e0eb0f7",
       "destination": "TIA",
       "departure": "2027-07-01",
@@ -613,47 +695,6 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "dae79bc9d56d8bbafac688a5",
-      "destination": "ZAG",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 9605.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Gol",
-        "KLM"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "GIG",
-          "AMS"
-        ],
-        null
-      ],
-      "durations": [
-        "PT23H40M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-16T22:15:56.848971+00:00",
-      "change_percent": null,
-      "historical_low": 9605.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDctMTVqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
       "id": "2478cd8541a639c9a49c55dd",
       "destination": "TIA",
       "departure": "2027-07-01",
@@ -736,47 +777,6 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
-      "id": "de27fab5971c0bf825abf622",
-      "destination": "ZAG",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 10210.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Air France",
-        "Gol"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "GRU",
-          "CDG"
-        ],
-        null
-      ],
-      "durations": [
-        "PT25H40M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-16T22:15:56.848971+00:00",
-      "change_percent": null,
-      "historical_low": 10210.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDctMTVqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
       "id": "c96589926db07952e4a28b6e",
       "destination": "TIA",
       "departure": "2027-07-01",
@@ -816,47 +816,6 @@
       "outbound_domestic_connection": true,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "8215efad7e7410f354fc142f",
-      "destination": "ZAG",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 10911.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "Lufthansa",
-        "Tap Air Portugal"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "LIS",
-          "MUC"
-        ],
-        null
-      ],
-      "durations": [
-        "PT17H0M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": null,
-      "international_connection": null,
-      "checked_at": "2026-11-16T22:15:56.848971+00:00",
-      "change_percent": null,
-      "historical_low": 10911.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": false,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDctMTVqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
       "id": "8c66cf565dbab10a2f5ef79c",
@@ -901,6 +860,47 @@
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     },
     {
+      "id": "fbeace56d24c86e141aaa94a",
+      "destination": "TIA",
+      "departure": "2027-02-20",
+      "return": "2027-03-06",
+      "price": 11545.0,
+      "currency": "BRL",
+      "airlines": [],
+      "airline_names": [
+        "British Airways",
+        "LATAM"
+      ],
+      "stops": [
+        2,
+        null
+      ],
+      "connections": [
+        [
+          "GRU",
+          "LHR"
+        ],
+        null
+      ],
+      "durations": [
+        "PT46H0M",
+        null
+      ],
+      "baggage": [],
+      "direct": null,
+      "domestic_connection": true,
+      "international_connection": null,
+      "checked_at": "2026-11-18T07:40:13.713193+00:00",
+      "change_percent": null,
+      "historical_low": 11545.0,
+      "promotion": false,
+      "period": "fev-mar",
+      "outbound_direct": false,
+      "outbound_domestic_connection": true,
+      "return_details_available": false,
+      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAyLTIwagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDMtMDZqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
+    },
+    {
       "id": "4f12ecd480cd6fb4e8032827",
       "destination": "TIA",
       "departure": "2027-07-01",
@@ -940,47 +940,6 @@
       "outbound_domestic_connection": true,
       "return_details_available": false,
       "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDVElBGh4SCjIwMjctMDctMTVqBwgBEgNUSUFyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
-    },
-    {
-      "id": "e0751b45608d8d916aed4d46",
-      "destination": "ZAG",
-      "departure": "2027-07-01",
-      "return": "2027-07-15",
-      "price": 15024.0,
-      "currency": "BRL",
-      "airlines": [],
-      "airline_names": [
-        "British Airways",
-        "LATAM"
-      ],
-      "stops": [
-        2,
-        null
-      ],
-      "connections": [
-        [
-          "GRU",
-          "LHR"
-        ],
-        null
-      ],
-      "durations": [
-        "PT51H45M",
-        null
-      ],
-      "baggage": [],
-      "direct": null,
-      "domestic_connection": true,
-      "international_connection": null,
-      "checked_at": "2026-11-16T22:15:56.848971+00:00",
-      "change_percent": null,
-      "historical_low": 15024.0,
-      "promotion": false,
-      "period": "jul-ago",
-      "outbound_direct": false,
-      "outbound_domestic_connection": true,
-      "return_details_available": false,
-      "source_url": "https://www.google.com/travel/flights?hl=pt&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTA3LTAxagcIARIDU1NBcgcIARIDWkFHGh4SCjIwMjctMDctMTVqBwgBEgNaQUdyBwgBEgNTU0FAAUgBcAGYAQE&tfu=EgIIAg"
     }
   ],
   "history": [
@@ -1127,6 +1086,12 @@
       "destination": "TIA",
       "period": "jul-ago",
       "price": 7692.0
+    },
+    {
+      "at": "2026-11-18T07:40:13.713193+00:00",
+      "destination": "TIA",
+      "period": "fev-mar",
+      "price": 7454.0
     }
   ]
 }
