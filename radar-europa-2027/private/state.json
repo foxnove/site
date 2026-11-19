@@ -3,13 +3,13 @@
     "month": "2026-11",
     "requests": 0
   },
-  "queries_total": 27,
+  "queries_total": 28,
   "serpapi_usage": {
     "month": "2026-11",
-    "requests": 27,
+    "requests": 28,
     "day": "2026-11-19",
-    "daily_requests": 1,
-    "last_search_at": "2026-11-19T07:35:56.804679+00:00"
+    "daily_requests": 2,
+    "last_search_at": "2026-11-19T20:45:25.789652+00:00"
   },
   "history": [
     {
@@ -173,6 +173,12 @@
       "destination": "TBS",
       "period": "fev-mar",
       "price": 10782.0
+    },
+    {
+      "at": "2026-11-19T20:45:25.789652+00:00",
+      "destination": "BRU",
+      "period": "jul-ago",
+      "price": 6374.0
     }
   ],
   "alerts": {},
@@ -1471,6 +1477,31 @@
       "price": 12882.0,
       "low": 12882.0,
       "at": "2026-11-19T07:35:56.804679+00:00"
+    },
+    "b53e2063f773438c48435015": {
+      "price": 6374.0,
+      "low": 6374.0,
+      "at": "2026-11-19T20:45:25.789652+00:00"
+    },
+    "4d451696abc0db9aaa5791e5": {
+      "price": 7103.0,
+      "low": 7103.0,
+      "at": "2026-11-19T20:45:25.789652+00:00"
+    },
+    "5f6a55ecaeade272f749e0bb": {
+      "price": 7352.0,
+      "low": 7352.0,
+      "at": "2026-11-19T20:45:25.789652+00:00"
+    },
+    "6d86f6826bee133cf041951d": {
+      "price": 8037.0,
+      "low": 8037.0,
+      "at": "2026-11-19T20:45:25.789652+00:00"
+    },
+    "ee42116e8dd3fe906153bb5d": {
+      "price": 15652.0,
+      "low": 15652.0,
+      "at": "2026-11-19T20:45:25.789652+00:00"
     }
   },
   "cursor": 1,
@@ -1630,11 +1661,17 @@
       "departure": "2027-02-20",
       "return": "2027-03-06",
       "price": 10782.0
+    },
+    "BRU|jul-ago": {
+      "destination": "BRU",
+      "departure": "2027-07-01",
+      "return": "2027-07-15",
+      "price": 6374.0
     }
   },
   "pending_alerts": {},
   "season_cursors": {
-    "jul-ago": 13,
+    "jul-ago": 14,
     "fev-mar": 13
   }
 }
