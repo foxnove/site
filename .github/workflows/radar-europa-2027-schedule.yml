@@ -1,7 +1,6 @@
 name: Radar Europa 2027 - agendamento
 on:
-  schedule:
-    - cron: '23 */6 * * *'
+  # Agendamento automatico pausado. Cron anterior: '23 */6 * * *'.
   workflow_dispatch:
 permissions:
   contents: write
